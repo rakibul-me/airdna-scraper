@@ -84,7 +84,7 @@ app.get("/get-data", async (req, res) => {
   }
   try {
     var pageRequest = {
-      url: "https://www.airdna.co/vacation-rental-data/app/us/california/santa-monica/overview",
+      url: url,
       renderType: "automation",
       overseerScript: `await page.waitForNavigation({waitUntil:"domcontentloaded"}); \
     await page.on("response", async (response) => { \
